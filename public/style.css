@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Palette+Mosaic & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Palette Mosaic, Arial;
+}
+
+header {
+    padding: 2rem;
+    background-color: rgb(230, 18, 18);
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main {
+    margin: 0 10rem 0 10rem;
+}
+
+section#card h2.lista {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+section#card {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+section#card div.card1 {
+    width: 250px;
+    border: 2px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    background-color: rgba(26,76,110,0.5);
+}
+
+section#card div.card1 p {
+    margin-top: .5rem;
+}
+
+section#card div.card1 a{
+    width: 30%;
+    padding: .5rem;
+    display: flex;
+    margin-left: 4.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid .1px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(19, 71, 105, 0.5);
+    margin-top: 1rem;
+}
+
+section#card div.card1 a:hover {
+    color: rgba(26,76,110,0.5);
+    border-color: rgba(26,76,110,0.5);
+}
+
+section#card div.card1 img {
+    width: 100%;
+    position: relative;
+    margin:-15px 0;
+    right:0;
+    top:0;
+    cursor:pointer;
+    -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+    transition:top .4s ease-in-out,right .4s ease-in-out;
+    top:10px;
+    right:10px;
+    padding-bottom:10px;
+    padding-left:10px
+}
+
+section#cadastro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+section#cadastro h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+section#cadastro form {
+    width: 50%; 
+}
+
+section#cadastro form input {
+    width: 100%;
+    padding: .3rem;
+    font-size: 1rem;
+    outline: none;
+    border: solid 1px rgba(146, 146, 146, 0.5);
+    border-radius: 3px;
+    margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label {
+        margin: 1rem;
+        color: rgb(58, 58, 58);
+}
+
+section#cadastro form button {
+    width: 25%;
+    padding: .1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+section#cadastro form button:hover {
+    color: red;
+    border-color: red;
+}
+
+footer {
+    background-color: rgba(19, 71, 105, 0.5);
+    padding: 5rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(179, 15, 15);
+}
+
+section#card div.card1 a.apague{
+    width: 20%;
+    padding: .5rem;
+    display: flex;
+    margin-left: 4.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid .1px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(19, 71, 105, 0.5);
+    margin-top: 1rem;
+}
+
+section#card div.card1 a.apague:hover {
+    color: red;
+    border-color: red;
+}
