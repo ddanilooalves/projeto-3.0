@@ -104,7 +104,8 @@ section#cadastro h2{
 }
 
 section#cadastro form {
-    width: 50%; 
+    width: 50%;
+    justify-content: center; 
 }
 
 section#cadastro form input {
