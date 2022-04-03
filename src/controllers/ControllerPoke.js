@@ -34,7 +34,7 @@ const getBid = async (req, res) => {
         const method = req.params.method;
         const pokedex = await Pokemon.findAll();
         const pokemon = await Pokemon.findByPk(req.params.id);
-        if (method == 'put') {
+        if (method == "put") {
             res.render("index", {
                 pokedex,
                 pokemonPut: pokemon,
@@ -53,11 +53,30 @@ const getBid = async (req, res) => {
     }
 };
 
-const update = (req, res) => {};
+const update = async (req, res) => {
+    try {
+        const pokemon = req.body;
+        await Pokemon.update(pokemon, { where: {id: req.params.id}});
+        res.redirect("/")
+    } catch (err) {
+        res.status(500).send({err: err.message});
+    }
+};
+
+const remove = async (req, res) => {
+    try {
+        await Pokemon.destroy({ where: { id: req.params.id }});
+        res.redirect("/")
+    } catch (err) {
+        res.status(500).send({err: err.message});
+    }
+};
 
 module.exports = {
     getAll,
     page,
     creation,
-    getBid
+    getBid,
+    update,
+    remove
 }; 

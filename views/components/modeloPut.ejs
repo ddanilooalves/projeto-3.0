@@ -2,23 +2,23 @@
     <div class="model" id="model">
         <div class="model-header">
             <h4>ATUALIZAR POKEMON</h4>
-            <a href="/">X</a>
+            <a href="/" id="style-model"><i class="bi bi-file-excel-fill"></i></a>
 
         </div>
         <div class="model-body">
-            <form action="/update/<% pokemonUp.id %>" method="POST">
+            <form class="model-form" action="/update/<%= pokemonPut.id %>" method="POST">
 
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" value="<% pokemonUp.nome %>">
+                <input type="text" id="nome" name="nome" value="<%= pokemonPut.nome %>">
     
                 <label for="descricao">Descrição: </label>
-                <input type="text" id="descricao" name="descricao" value="<% pokemonUp.descricao %>>
+                <input type="text" id="descricao" name="descricao" value="<%= pokemonPut.descricao %>">
     
                 <label for="tipo">Tipo: </label>
-                <input type="text" id="tipo" name="tipo" value="<% pokemonUp.tipo%>>
+                <input type="text" id="tipo" name="tipo" value="<%= pokemonPut.tipo %>">
     
                 <label for="imagem">Link da imagem: </label>
-                <input type="text" id="imagem" name="imagem" value="<% pokemonUp.imagem %>>
+                <input type="text" id="imagem" name="imagem" value="<%= pokemonPut.imagem %>">
     
                 <button id = "btnCadastro" type="submit">ATUALIZAR</button>
             </form>

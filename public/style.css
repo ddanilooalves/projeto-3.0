@@ -169,3 +169,133 @@ section#card div.card1 a.apague:hover {
     color: red;
     border-color: red;
 }
+
+
+.modelo {
+    background-color: #00000045;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.model {
+    margin: 11rem;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.model-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(19, 71, 105, 0.5);
+    padding: 1rem;
+    color: white;
+}
+
+.model-header a#style-model {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.model-body {
+    padding: .5rem 1rem;
+    flex: 1;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.model-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.model-form input {
+    width: 100%;
+    padding: .5rem;
+    font-size: .8rem;
+    outline: none;
+    border: solid 2px rgba(146, 146, 146, 0.5);
+}
+
+.model-form label {
+    color: rgb(112, 112, 112);
+    padding-top: .5rem;
+}
+
+.model-form button {
+    padding: .6rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 1rem;
+    background-color: white;
+    border: solid 1px rgba(19, 71, 105, 0.5);
+    color: rgba(19, 71, 105, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+.model-form button:hover {
+    background-color: rgba(19, 71, 105, 0.5);
+    color: white;
+}
+
+.model-body p {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div.botaoDel {
+    display: flex;
+    margin: 0 auto;
+}
+
+div.botaoDel a {
+    padding: .7rem;
+    text-decoration: none;
+    width: 100%;
+    margin: 2rem 1rem 1rem;
+}
+
+div.botaoDel a#no {
+    color: #dc0a2d;
+    border: solid 1px #dc0a2d;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+
+div.botaoDel a#no:hover {
+    color: white;
+    background-color: #dc0a2d;
+}
+
+div.botaoDel a#yes {
+    color: green;
+    border: solid 1px green;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+
+div.botaoDel a#yes:hover {
+    color: white;
+    background-color: green;
+}
