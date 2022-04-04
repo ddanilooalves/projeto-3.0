@@ -31,4 +31,10 @@ const Pokemon = connect.define(
     updatedAt: false,
 });
 
+const initTabela = async () => {
+    await Pokemon.sync();
+};
+
+initTabela();
+
 module.exports = Pokemon;
