@@ -9,6 +9,9 @@
 
     <section id="cadastro">
 
+        <% if (message != "") { %>
+            <%- include('./components/alerts') %>
+        <% } %>
     
         <h2>
             CADASTRAR POKEMON!
@@ -32,6 +35,8 @@
     </section>
 
     <%- include('./components/footer') %>
+
+    <script src="/script.js"></script>
     
 </body>
 </html>

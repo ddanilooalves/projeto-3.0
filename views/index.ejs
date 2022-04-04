@@ -5,11 +5,14 @@
 </head>
 <body>
     
-    <header>
-        <h1> Pokédex </h1>
-    </header>
-
     <%- include('./components/nav') %>
+
+    <header>
+        <img src="/Imag/dem.jpg" alt="banner">
+        <% if (message != "") { %>
+        <%- include('./components/alerts') %>
+        <% } %>
+    </header>
 
     <main>
         <section id = "card">
@@ -48,5 +51,8 @@
             transform: scale(1.1);
         }
     </style>
+
+    <script src="/script.js"></script>
+
 </body>
 </html>

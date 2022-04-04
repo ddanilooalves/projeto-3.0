@@ -7,15 +7,41 @@
     font-family: Palette Mosaic, Arial;
 }
 
-header {
-    padding: 2rem;
-    background-color: rgb(230, 18, 18);
+header img {
+    width: 100%;
 }
 
-header h1 {
+nav {
+    background-color: rgba(0, 67, 112, 0.479);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0.6rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 241, 241);
+    font-size: 1rem;
+}
+
+nav h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
+}
+
+nav img {
+    width: 3rem;
 }
 
 main {
@@ -32,6 +58,7 @@ section#card {
     display:flex;
     justify-content:center;
     flex-wrap: wrap;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 section#card div.card1 {
@@ -94,7 +121,8 @@ section#cadastro {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5rem;
+    padding: 12.65rem;
+
 }
 
 section#cadastro h2{
@@ -137,39 +165,6 @@ section#cadastro form button:hover {
     color: red;
     border-color: red;
 }
-
-footer {
-    background-color: rgba(19, 71, 105, 0.5);
-    padding: 5rem;
-    text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: rgb(179, 15, 15);
-}
-
-section#card div.card1 a.apague{
-    width: 20%;
-    padding: .5rem;
-    display: flex;
-    margin-left: 4.5rem;
-    cursor: pointer;
-    border-radius: 3px;
-    border: solid .1px;
-    transition: all .3s ease-in-out;
-    text-decoration: none;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    background-color: rgba(19, 71, 105, 0.5);
-    margin-top: 1rem;
-}
-
-section#card div.card1 a.apague:hover {
-    color: red;
-    border-color: red;
-}
-
 
 .modelo {
     background-color: #00000045;
@@ -299,3 +294,73 @@ div.botaoDel a#yes:hover {
     color: white;
     background-color: green;
 }
+
+footer {
+    background-color: rgba(19, 71, 105, 0.5);
+    padding: 5rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 67, 112);
+}
+
+section#card div.card1 a.apague{
+    width: 20%;
+    padding: .5rem;
+    display: flex;
+    margin-left: 4.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid .1px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(19, 71, 105, 0.5);
+    margin-top: 1rem;
+}
+
+section#card div.card1 a.apague:hover {
+    color: red;
+    border-color: red;
+}
+
+.message {
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    padding: 1.2rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.message i {
+    cursor: pointer;
+}
+
+.message-danger {
+    background-color: rgb(250, 154, 154);
+    color: #b4001e;
+}
+
+.message-success {
+    background-color: rgb(162, 250, 162);
+    color: green;
+}
+
+.message-info {
+    background-color: rgb(184, 173, 247);
+    color: #1200b4;
+}
+
+.message-warning {
+    background-color: rgb(243, 242, 167);
+    color: #b49900;
+}
+
